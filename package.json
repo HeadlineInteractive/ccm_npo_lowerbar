@@ -1,0 +1,13 @@
+{
+  "name": "ccm_restyle_package",
+  "version": "1.0.0",
+  "author": "Headline Interactive B.V.",
+  "license": "ISC",
+  "description": "CCM Restyle Package",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^3.1.0",
+    "gulp-plumber": "^1.1.0",
+    "gulp-sass": "^2.3.2"
+  }
+}

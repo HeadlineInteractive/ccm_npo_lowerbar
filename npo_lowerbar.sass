@@ -1,0 +1,243 @@
+// CCM Main settings
+$maxheight:                                   calc(100% - 200px)
+$boxshadow:                                   0 -8px 15px 0 rgba(0,0,0,0.10)
+$ccm_bg_color:                                #FFFFFF
+$ccm_link_color:                              #FF6D00
+$ccm_textcolor:                               #444444
+
+// Font styling
+$primaryfont:                                 Helvetica Neue,Helvetica,Arial,sans-serif
+$fontweight:                                  400
+$fontsizeparagraph:                           15px
+$fontlineheight:                              20px
+$fontsizeheading:                             19px
+$fontlineheightheading:                       24px
+$fontweightheading:                           bold
+
+// Primary button styling
+$ccm_primary_button_bgcolor:                  #3DC53C
+$ccm_primary_button_textcolor:                #FFFFFF
+$ccm_primary_button_borderradius:             4px
+$ccm_primary_button_fontsize:                 15px
+$ccm_primary_button_fontfamily:               Helvetica Neue,Helvetica,Arial,sans-serif
+$ccm_primary_button_fontweight:               500
+$ccm_primary_button_lineheight:               20px
+$ccm_primary_button_padding:                  14.5px 21px
+$ccm_primary_button_iconcolor:                #FFFFFF
+
+// Secondary button styling
+$ccm_secondary_button_bgcolor:                #E7E7E7
+$ccm_secondary_button_textcolor:              #444444
+$ccm_secondary_button_iconfill:               #3DC53C
+
+// Disabledmessage styling
+$ccm_button_disabledmessage_bg_color:         #252525
+$ccm_button_disabledmessage_text_color:       #FFFFFF
+$ccm_button_disabledmessage_border_radius:    5px
+$ccm_button_disabledmessage_font_weight:      bold
+$ccm_button_disabledmessage_arrow_color:      #252525
+
+// Cookie info styling
+$ccm_cookie_info_label_fontweight:            bold
+
+// Cookie checkbox not checked styling
+$ccm_cookie_checkbox_notchecked_bgcolor:      #FFFFFF
+$ccm_cookie_checkbox_notchecked_bordercolor:  #A0A0A0
+$ccm_cookie_checkbox_notchecked_iconfill:     #4F4F4F
+
+// Cookie checkbox checked styling
+$ccm_cookie_checkbox_checked_bgcolor:         #3DC53C
+$ccm_cookie_checkbox_checked_bordercolor:     #3DC53C
+
+// Cookie highlighted styling
+$ccm_cookie_highlighted_color:                #E3F7E4
+
+// Previous bar
+$ccm_previous_bar_bgcolor:                    #F2F2F2
+
+
+#ccm_notification
+  max-height: $maxheight
+  box-shadow: $boxshadow
+
+  & span
+    font-family: $primaryfont
+
+  & p
+    font-family: $primaryfont
+    font-weight: $fontweight
+    font-size: $fontsizeparagraph
+    line-height: $fontlineheight
+
+  & ul
+    font-family: $primaryfont
+    font-weight: $fontweight
+    font-size: $fontsizeparagraph
+    line-height: $fontlineheight
+
+  & li
+    font-family: $primaryfont
+    font-weight: $fontweight
+    font-size: $fontsizeparagraph
+    line-height: $fontlineheight
+
+  & a
+    font-family: $primaryfont
+    font-weight: $fontweight
+    font-size: $fontsizeparagraph
+
+#ccm_notification_wrapper
+  background-color: $ccm_bg_color
+
+#ccm_notification
+  a
+    font-family: $primaryfont
+    color: $ccm_link_color
+    font-size: $fontsizeparagraph
+    line-height: $fontlineheight
+
+#ccm_notification .ccm_btn
+  background-color: $ccm_primary_button_bgcolor
+  border-radius: $ccm_primary_button_borderradius
+  font-family: $ccm_primary_button_fontfamily
+  font-size: $ccm_primary_button_fontsize
+  line-height: $ccm_primary_button_lineheight
+  font-weight: $ccm_primary_button_fontweight
+  color: $ccm_primary_button_textcolor
+  padding: $ccm_primary_button_padding
+
+  &--gray
+    background-color: $ccm_secondary_button_bgcolor
+    color: $ccm_secondary_button_textcolor
+
+    & .ccm_btn-icon
+      fill: $ccm_secondary_button_iconfill
+
+  &--save:disabled
+    background-color: $ccm_secondary_button_bgcolor
+    color: $ccm_secondary_button_textcolor
+    font-weight: $ccm_primary_button_fontweight
+
+  & .ccm_btn-icon
+    fill: $ccm_primary_button_iconcolor
+
+.ccm_btn_disabledmessage
+  background: $ccm_button_disabledmessage_bg_color
+  color: $ccm_button_disabledmessage_text_color
+  border-radius: $ccm_button_disabledmessage_border_radius
+  font-weight: $ccm_button_disabledmessage_font_weight
+
+  &::after
+    border-top: 20px solid $ccm_button_disabledmessage_arrow_color
+
+#ccm_col_content_extended
+
+    & h3
+        font-family: $primaryfont
+        color: $ccm_textcolor
+        font-size: $fontsizeheading
+        line-height: $fontlineheightheading
+        font-weight: $fontweightheading
+
+    & p
+        font-family: $primaryfont
+        font-size: $fontsizeparagraph
+        line-height: $fontlineheight
+        color: $ccm_textcolor
+
+#ccm_col_content_footer
+  font-family: $primaryfont
+
+#ccm_col_content_cookieitems
+  font-family: $primaryfont
+  font-size: $fontsizeparagraph
+  line-height: $fontlineheight
+  color: $ccm_textcolor
+
+.ccm_col_content_cookieitem-info
+  line-height: $fontlineheight
+
+.ccm_col_content_cookieitem-info p
+  color: $ccm_textcolor
+  font-family: $primaryfont
+  font-weight: $fontweight
+
+.ccm_col_content_cookieitem-infolabel
+  font-weight: $ccm_cookie_info_label_fontweight
+
+.ccm_col_content_cookieitem-radiocheck
+  background-color: $ccm_cookie_checkbox_notchecked_bgcolor
+  border: 2px solid $ccm_cookie_checkbox_notchecked_bordercolor
+
+.ccm_col_content_cookieitem-radiocheckicon
+  fill: $ccm_cookie_checkbox_notchecked_iconfill
+
+.ccm_col_content_cookieitem-radio
+  &:hover input ~ .ccm_col_content_cookieitem-radiocheck
+    border: 2px solid $ccm_cookie_checkbox_notchecked_iconfill
+  input:checked ~ .ccm_col_content_cookieitem-radiocheck
+    background-color: $ccm_cookie_checkbox_checked_bgcolor
+    border: 2px solid $ccm_cookie_checkbox_checked_bordercolor
+
+.ccm_col_content_cookieitem-radiowrap--selected
+  .ccm_col_content_cookieitem-radio:hover input
+    ~ .ccm_col_content_cookieitem-radiocheck .ccm_col_content_cookieitem-radiocheckicon
+      fill: $ccm_cookie_checkbox_notchecked_iconfill
+    &:checked ~ .ccm_col_content_cookieitem-radiocheck .ccm_col_content_cookieitem-radiocheckicon
+      fill: $ccm_cookie_checkbox_notchecked_bgcolor
+
+#ccm_col_content_regular
+
+    & h3
+        font-family: $primaryfont
+        color: $ccm_textcolor
+        font-size: $fontsizeparagraph
+        line-height: $fontlineheight
+        font-weight: $fontweightheading
+
+    & p
+        font-family: $primaryfont
+        font-size: $fontsizeparagraph
+        line-height: $fontlineheight
+        color: $ccm_textcolor
+
+#ccm_col_content_extended ul
+  font-family: $primaryfont
+  color: $ccm_textcolor
+  font-size: $fontsizeparagraph
+  line-height: $fontlineheight
+
+.ccm_responsive_top
+  background: $ccm_previous_bar_bgcolor
+
+@media only screen and (max-width: 600px)
+    .ccm_btn_disabledmessage
+        font-size: $fontsizeparagraph
+
+    #ccm_col_content_cookieitems
+        font-size: $fontsizeparagraph
+        line-height: $fontlineheight
+
+    #ccm_col_content_extended
+        & h3
+            font-size: $fontsizeheading
+            line-height: $fontlineheight
+        & p
+          font-size: $fontsizeparagraph
+          line-height: $fontlineheight
+        & a
+            font-size: $fontsizeparagraph
+        & ul
+            font-size: $fontsizeparagraph
+            line-height: $fontlineheight
+
+    #ccm_notification
+        & a
+            font-size: $fontsizeparagraph
+
+.ccm_col_content_cookieitem-highlighted
+  &::after
+    background: $ccm_cookie_highlighted_color
+
+.ccm_notification_more_info .ccm_btn--more-info-previous
+  color: $ccm_textcolor !important
